@@ -10,11 +10,11 @@ namespace Spryker\Zed\SalesExtension\Dependency\Plugin;
 use Generated\Shared\Transfer\ItemCollectionTransfer;
 use Generated\Shared\Transfer\ItemTransfer;
 
-interface SalesItemTransformerStrategyPluginInterface
+interface ItemTransformerStrategyPluginInterface
 {
     /**
      * Specification:
-     *  - Returns true if plugin is applicable.
+     *  - Returns true if strategy is applicable.
      *
      * @api
      *
@@ -26,7 +26,7 @@ interface SalesItemTransformerStrategyPluginInterface
 
     /**
      * Specification:
-     *  - Transforms item according to selected strategy.
+     *  - Transforms item according strategy.
      *
      * @api
      *

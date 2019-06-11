@@ -7,8 +7,8 @@
 
 namespace Spryker\Zed\SalesExtension\Dependency\Plugin;
 
-use Generated\Shared\Transfer\OrderTransfer;
 use Generated\Shared\Transfer\QuoteTransfer;
+use Generated\Shared\Transfer\SaveOrderTransfer;
 
 interface OrderPostSavePluginInterface
 {
@@ -18,10 +18,10 @@ interface OrderPostSavePluginInterface
      *
      * @api
      *
-     * @param \Generated\Shared\Transfer\OrderTransfer $orderTransfer
+     * @param \Generated\Shared\Transfer\SaveOrderTransfer $saveOrderTransfer
      * @param \Generated\Shared\Transfer\QuoteTransfer $quoteTransfer
      *
-     * @return \Generated\Shared\Transfer\OrderTransfer
+     * @return \Generated\Shared\Transfer\SaveOrderTransfer
      */
-    public function execute(OrderTransfer $orderTransfer, QuoteTransfer $quoteTransfer): OrderTransfer;
+    public function execute(SaveOrderTransfer $saveOrderTransfer, QuoteTransfer $quoteTransfer): SaveOrderTransfer;
 }

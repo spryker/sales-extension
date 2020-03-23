@@ -7,19 +7,17 @@
 
 namespace Spryker\Zed\SalesExtension\Dependency\Plugin;
 
-use Generated\Shared\Transfer\OrderTransfer;
-
 interface SearchOrderExpanderPluginInterface
 {
     /**
      * Specification:
-     * - Expands OrderTransfer with additional data.
+     * - Expands OrderTransfers with additional data.
      *
      * @api
      *
-     * @param \Generated\Shared\Transfer\OrderTransfer $orderTransfer
+     * @param \Generated\Shared\Transfer\OrderTransfer[] $orderTransfers
      *
-     * @return \Generated\Shared\Transfer\OrderTransfer
+     * @return \Generated\Shared\Transfer\OrderTransfer[]
      */
-    public function expand(OrderTransfer $orderTransfer): OrderTransfer;
+    public function expand(array $orderTransfers): array;
 }
